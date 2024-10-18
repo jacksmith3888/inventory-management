@@ -2,6 +2,7 @@
 import CardPopularProducts from './CardPopularProducts';
 import CardPurchaseSummary from './CardPurchaseSummary';
 import CardSalesSummary from './CardSalesSummary';
+import CardExpenseSummary from './client/src/app/dashboard/CardExpenseSummary';
 
 const Dashboard = () => {
   return (
@@ -9,7 +10,7 @@ const Dashboard = () => {
       <CardPopularProducts />
       <CardSalesSummary />
       <CardPurchaseSummary />
-      <div className="row-span-3 bg-gray-500"></div>
+      <CardExpenseSummary />
       <div className="md:row-span-1 xl:row-span-2 bg-gray-500" />
       <div className="md:row-span-1 xl:row-span-2 bg-gray-500" />
       <div className="md:row-span-1 xl:row-span-2 bg-gray-500" />
