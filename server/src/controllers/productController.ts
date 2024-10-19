@@ -15,6 +15,9 @@ export const getProducts = async (
           contains: search,
         },
       },
+      orderBy: {
+        productId: 'desc',
+      },
     });
     res.status(200).json(products);
   } catch (error) {
