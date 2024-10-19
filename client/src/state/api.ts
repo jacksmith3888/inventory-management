@@ -80,6 +80,10 @@ export const api = createApi({
       }),
       invalidatesTags: ['Products'],
     }),
+    getUsers: build.query<User[], void>({
+      query: () => '/users',
+      providesTags: ['Users'],
+    }),
   }),
 });
 
@@ -87,4 +91,5 @@ export const {
   useGetDashboardMetricsQuery,
   useGetProductsQuery,
   useCreateProductMutation,
+  useGetUsersQuery,
 } = api;
