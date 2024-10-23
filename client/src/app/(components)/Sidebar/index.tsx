@@ -74,7 +74,7 @@ const Sidebar = () => {
           isSidebarCollapsed ? 'px-5' : 'px-8'
         }`}>
         <Image
-          src="https://s3-inventorymanagement-jason.s3.ap-northeast-1.amazonaws.com/logo.png"
+          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/logo.png`}
           alt="jason-logo"
           width={27}
           height={27}

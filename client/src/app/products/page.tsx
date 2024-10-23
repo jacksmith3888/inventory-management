@@ -80,9 +80,9 @@ const Products = () => {
               className="border shadow rounded-md p-4 max-w-full w-full mx-auto">
               <div className="flex flex-col items-center">
                 <Image
-                  src={`https://s3-inventorymanagement-jason.s3.ap-northeast-1.amazonaws.com/product${Math.floor(
-                    Math.random() * 3 + 1
-                  )}.png`}
+                  src={`${
+                    process.env.NEXT_PUBLIC_IMAGE_URL
+                  }/product${Math.floor(Math.random() * 3 + 1)}.png`}
                   alt="Product"
                   width={150}
                   height={150}
